@@ -1,13 +1,13 @@
-function separacao()
+local function separacao()
 	print("--------------------")
 end
 
-function limparTela()
+local function limparTela()
 	os.execute("clear")
 	os.execute("cls")
 end
 
-function tabela()
+local function tabela()
 
 	print("1 - Soma")
 	print("2 - Subtracao")
@@ -23,122 +23,122 @@ function tabela()
 	print("Escolha uma opcao (Digite o numero da opcao)")
 end
 
-function soma()
+local function soma()
 	print("Digite o primeiro numero:")
-	primeiroNumero = io.read();
+	local primeiroNumero = io.read();
 	
 	print("Digite o segundo numero:")
-	segundoNumero = io.read();
+	local segundoNumero = io.read();
 	
-	somaResult = primeiroNumero + segundoNumero
+	local somaResult = primeiroNumero + segundoNumero
 	separacao()
 
 	return print("Resultado ", somaResult, "\n")
 end
 
-function subtracao()
+local function subtracao()
 
 	print("Digite o primeiro numero:")
-    primeiroNumero = io.read();
+    local primeiroNumero = io.read();
 
     print("Digite o segundo numero:")
-    segundoNumero = io.read();
+    local segundoNumero = io.read();
 
-    subtracaoResult = primeiroNumero - segundoNumero
+    local subtracaoResult = primeiroNumero - segundoNumero
 	separacao()
 
     return print(subtracaoResult, "\n")
 end
 
-function multiplicacao()
+local function multiplicacao()
 
     print("Digite o primeiro numero:")
-    primeiroNumero = io.read();
+    local primeiroNumero = io.read();
 
     print("Digite o segundo numero:")
-    segundoNumero = io.read();
+    local segundoNumero = io.read();
 
-    multiplicacaoResult = primeiroNumero * segundoNumero
+    local multiplicacaoResult = primeiroNumero * segundoNumero
 	separacao()
 
     return print(multiplicacaoResult, "\n")
 end
 
-function divisao()
+local function divisao()
 
     print("Digite o primeiro numero:")
-    primeiroNumero = io.read();
+    local primeiroNumero = io.read();
 
     print("Digite o segundo numero:")
-    segundoNumero = io.read();
+    local segundoNumero = io.read();
 
-    divisaoResult = primeiroNumero / segundoNumero
+    local divisaoResult = primeiroNumero / segundoNumero
 	separacao()
 
     return print(divisaoResult, "\n")
 end
 
-function quadrado()
+local function quadrado()
 
 	print("Digite um numero para elevar ao quadrado:")
-	numero = io.read();
+	local numero = io.read();
 
-	quadradoResult = numero ^ 2
+	local quadradoResult = numero ^ 2
 	separacao()
 
 	return print(quadradoResult, '\n')
 end
 
-function cubica()
+local function cubica()
 	
 	print("Digite um numero para elevar ao cubo:")
-	numero = io.read();
+	local numero = io.read();
 
-	cuboResult = numero ^ 3
+	local cuboResult = numero ^ 3
 	separacao()
 
 	return print(cuboResult, '\n')
 end
 
-function raizQuadrada()
+local function raizQuadrada()
 	
 	print("Digite um numero para realizar a raiz quadrada:")
-	numero = io.read();
+	local numero = io.read();
 
-	raizQuadradaResult = math.sqrt(numero)
+	local raizQuadradaResult = math.sqrt(numero)
 	separacao()
 
 	return print("Resultado", raizQuadradaResult, "\n")
 end
 
-function raizCubica()
+local function raizCubica()
 
 	print("Digite um numero para realizar a raiz cubica:")
-	numero = io.read();
+	local numero = io.read();
 
-	raizCubicaResult = numero^(1/3)
+	local raizCubicaResult = numero^(1/3)
 	separacao()
 
 	return print("Resultado", raizCubicaResult, "\n")
 end
 
-function logaritmo()
+local function logaritmo()
 	
 	print("Digite um numero para realizar a logaritmo:")
-	numero = io.read();
+	local numero = io.read();
 
-	logResult = math.log(numero)
+	local logResult = math.log(numero)
 	separacao()
 
 	return print("Resultado", logResult, "\n")
 end
 
-rodando = "true"
+local rodando = "true"
 
 while rodando ~= "false" do
 	
 	tabela()
-	escolha = io.read();
+	local escolha = io.read();
 	
 	if escolha == "1" then
 		limparTela()
