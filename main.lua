@@ -1,7 +1,7 @@
 --Importações
 
 require "funcoesFormulas"
-require "funcoesUtils"
+require "funcoesDeInterface"
 
 --Main
 
